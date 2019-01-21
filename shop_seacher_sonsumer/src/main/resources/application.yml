@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+dubbo:
+  application:
+    name: shop_seacher_consumer
+  registry:
+    address: zookeeper://192.168.235.160:2181
+
+spring:
+  data:
+    solr:
+      host: http://192.168.235.160:8080/solr
+  thymeleaf:
+    cache: false
+
+

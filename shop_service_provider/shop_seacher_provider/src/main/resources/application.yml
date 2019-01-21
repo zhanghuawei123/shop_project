@@ -1,0 +1,16 @@
+server:
+  port: 8085
+
+dubbo:
+  application:
+    name: shop_seacher_provider
+  registry:
+    address: zookeeper://192.168.235.160:2181
+  protocol:
+    port: -1
+  provider:
+    timeout: 10000
+spring:
+  data:
+    solr:
+      host: http://192.168.235.160:8080/solr
